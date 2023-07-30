@@ -7,12 +7,12 @@
           <h2 class="section-title m-2">
             <span
               class="material-icons-outlined animate-pulse relative mx-2 pt-1 align-top"
-              >volcano</span
+              >cake</span
             >
             LOG IN
             <span
               class="material-icons-outlined animate-pulse relative mx-2 pt-1 align-top"
-              >volcano</span
+              >cake</span
             >
           </h2>
         </div>
