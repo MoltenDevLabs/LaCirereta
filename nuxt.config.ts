@@ -12,12 +12,11 @@ export default defineNuxtConfig({
   ],
   app: {
     head: {
-      title: "Nuxt template",
+      title: "Selecta Cakes",
       meta: [
         {
-          name: "Nuxt template",
-          content:
-            "Nuxt, tailwind, google fonts, supabase, nuxt icons, color mode, device",
+          name: "Selecta Cakes",
+          content: "Pastissos increïbles",
           charset: "UTF-8",
         },
       ],
@@ -42,7 +41,7 @@ export default defineNuxtConfig({
         wght: [100, 200, 300, 400, 500, 600, 700, 800, 900],
         ital: [100, 200, 300, 400, 500, 600, 700, 800, 900],
       },
-      Merriweather: {
+      OpenSans: {
         wght: [100, 200, 300, 400, 500, 600, 700, 800, 900],
         ital: [100, 200, 300, 400, 500, 600, 700, 800, 900],
       },

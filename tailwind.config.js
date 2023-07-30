@@ -67,11 +67,11 @@ module.exports = {
       },
       fontFamily: {
         header: ["Lato", "sans-serif"],
-        body: ["Merriweather", "sans-serif"],
+        body: ["OpenSans", "sans-serif"],
       },
     },
     backgroundImage: {
-      texture: `url('assets/images/volcanic-rock-texture-1.jpg')`,
+      texture: `url('https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/hero-image/hero.jpg?t=2023-07-19T15%3A13%3A04.745Z')`,
     },
   },
   plugins: [require("@tailwindcss/typography")],

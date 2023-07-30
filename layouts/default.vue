@@ -60,10 +60,12 @@
             <nuxt-link to="/about" @click="scrollToTop()">ABOUT</nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/contact" @click="scrollToTop()">CONTACT</nuxt-link>
+            <nuxt-link to="/contact" @click="scrollToTop()">CONTACTE</nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/design" @click="scrollToTop()">DESIGN</nuxt-link>
+            <nuxt-link to="/category" @click="scrollToTop()"
+              >CATEGORIA</nuxt-link
+            >
           </li>
           <li>
             <nuxt-link
@@ -71,7 +73,7 @@
               @click="scrollToTop()"
               class="btn"
             >
-              {{ user ? "PROFILE" : "LOG IN" }}
+              {{ user ? "PERFIL" : "LOG IN" }}
             </nuxt-link>
           </li>
         </ul>
@@ -99,11 +101,13 @@
             </li>
             <li>
               <nuxt-link to="/contact" @click="scrollToTop()"
-                >CONTACT</nuxt-link
+                >CONTACTE</nuxt-link
               >
             </li>
             <li>
-              <nuxt-link to="/design" @click="scrollToTop()">DESIGN</nuxt-link>
+              <nuxt-link to="/category" @click="scrollToTop()"
+                >CATEGORIES</nuxt-link
+              >
             </li>
           </ul>
         </nav>
@@ -124,7 +128,7 @@
                 @click="scrollToTop()"
                 class="btn"
               >
-                {{ user ? "PROFILE" : "LOG IN" }}
+                {{ user ? "PERFIL" : "LOG IN" }}
               </nuxt-link>
             </li>
           </ul>
@@ -156,9 +160,7 @@
           </nuxt-link>
           <p class="text-xs lg:text-sm mb-0">
             Made with
-            <span class="material-icons-outlined align-text-bottom"
-              >local_fire_department</span
-            >
+            <span class="material-icons-outlined align-text-bottom">cake</span>
             in Reus
           </p>
         </div>
@@ -174,12 +176,12 @@
               </li>
               <li class="text-xs lg:text-sm">
                 <nuxt-link to="/contact" @click="scrollToTop()"
-                  >Contact</nuxt-link
+                  >Contacte</nuxt-link
                 >
               </li>
               <li class="text-xs lg:text-sm">
-                <nuxt-link to="/design" @click="scrollToTop()"
-                  >Design</nuxt-link
+                <nuxt-link to="/category" @click="scrollToTop()"
+                  >Categoria</nuxt-link
                 >
               </li>
               <li class="text-xs lg:text-sm">
@@ -192,7 +194,7 @@
               </li>
               <li class="text-xs lg:text-sm">
                 <nuxt-link to="/profile" @click="scrollToTop()"
-                  >Profile</nuxt-link
+                  >Perfil</nuxt-link
                 >
               </li>
             </ul>
@@ -201,10 +203,10 @@
         <div class="">
           <nav>
             <ul>
-              <h6 class="font-bold text-xs lg:text-sm mb-2">Check my work</h6>
+              <h6 class="font-bold text-xs lg:text-sm mb-2">Meet me</h6>
               <li class="text-xs lg:text-sm">
                 <nuxt-link to="/contact" @click="scrollToTop()"
-                  >Contact</nuxt-link
+                  >Contacte</nuxt-link
                 >
               </li>
             </ul>

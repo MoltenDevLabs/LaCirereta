@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Merriweather", "Lato", sans-serif;
+  font-family: "OpenSans", "Lato", sans-serif;
 }
 
 @layer base {
@@ -184,5 +184,16 @@
   .bg-modal {
     @apply blur-sm brightness-50 pointer-events-none overflow-hidden
       transition-all duration-500;
+  }
+
+  .section-title {
+    @apply uppercase font-light tracking-widest text-[1.6rem];
+  }
+
+  .select-product {
+    @apply p-1 my-4 w-2/3
+      border rounded-md outline-surface-900
+      border-surface-900 dark:border-surface-300
+      dark:bg-surface-800;
   }
 }
