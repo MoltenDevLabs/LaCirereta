@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div>
     <h1 class="font-semibold sm:text-5xl lg:text-6xl">
       GAUDEIX DE LA DELICIA SENSE PRECEDENTS
     </h1>
@@ -11,12 +11,10 @@
     </p>
     <div class="flex my-8">
       <button class="btn text-sm">
-        <nuxt-link class="no-underline" to="/category">Deleita't</nuxt-link>
+        <nuxt-link to="/category">Deleita't</nuxt-link>
       </button>
       <button class="btn-text text-sm ml-4">
-        <nuxt-link class="no-underline" to="/contact"
-          >Coneix la repostera</nuxt-link
-        >
+        <nuxt-link to="/contact">Coneix la repostera</nuxt-link>
       </button>
     </div>
   </div>

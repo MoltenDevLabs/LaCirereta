@@ -32,7 +32,7 @@ const props = defineProps({
     required: true,
   },
   price: {
-    type: String,
+    type: Object,
     required: true,
   },
   imageSrc: {

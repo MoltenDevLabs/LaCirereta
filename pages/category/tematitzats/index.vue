@@ -7,9 +7,26 @@
       pel·lícules, sèries o personatges preferits, o amb temes com animals,
       pirates, princeses o circ.
     </p>
+    <div
+      class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 auto-cols-auto gap-4"
+    >
+      <productCard
+        v-for="tematitzat in tematitzatsList"
+        :key="tematitzat.id"
+        :tematitzat="tematitzat"
+        :title="tematitzat.title"
+        :description="tematitzat.description"
+        :price="tematitzat.price"
+        :imageSrc="tematitzat.img"
+      />
+    </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { useCakeStore } from "@/stores/cakeStore";
+const cakeStore = useCakeStore();
+const tematitzatsList = cakeStore.tematitzatsList;
+</script>
 
-<style scoped></style>
+<style></style>

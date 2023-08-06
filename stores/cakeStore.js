@@ -114,6 +114,18 @@ export const useCakeStore = defineStore("cakeStore", () => {
       },
       img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
     },
+    {
+      id: 104,
+      title: "carrot cake",
+      description:
+        "Deliciós pastís de pastanaga, el classic pastís de pastanaga, amb la millor recepta que es pot trobar.",
+      price: {
+        Petit: 53.2,
+        Mitjà: 87.1,
+        Gran: 153.2,
+      },
+      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
+    },
   ]);
   const browniesList = ref([
     {
@@ -222,7 +234,11 @@ export const useCakeStore = defineStore("cakeStore", () => {
       id: 301,
       title: "cheesecake de prova",
       description: "Aixo es un text de prova pel cheesecake",
-      price: "10.00€",
+      price: {
+        Petit: 53.2,
+        Mitjà: 87.1,
+        Gran: 153.2,
+      },
       img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
     },
   ]);
@@ -232,7 +248,7 @@ export const useCakeStore = defineStore("cakeStore", () => {
       title: "pastis tradicional de prova",
       description: "Aixo es un text de prova pel tradicional",
       price: "300.00€",
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/cake-image/cake1.jpg",
+      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
     },
   ]); */
   const tematitzatsList = ref([
@@ -240,8 +256,12 @@ export const useCakeStore = defineStore("cakeStore", () => {
       id: 501,
       title: "pastis tematitzat de prova",
       description: "Aixo es un text de prova pel pastis tematitzat",
-      price: "50.25€",
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/cake-image/cake1.jpg",
+      price: {
+        Petit: 53.2,
+        Mitjà: 87.1,
+        Gran: 153.2,
+      },
+      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
     },
   ]);
   return {
