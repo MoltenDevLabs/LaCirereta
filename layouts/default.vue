@@ -48,7 +48,7 @@
             @click="themeStore.toggleTheme()"
           >
             <i
-              class="material-icons-outlined text-surface-900 dark:text-surface-200 border rounded-full p-1 scale-75"
+              class="material-icons-outlined theme-icon scale-75"
               :class="{ 'border-surface-900': !themeStore.isDarkTheme }"
               :title="themeStore.isDarkTheme ? 'Light mode' : 'Dark mode'"
             >
@@ -67,7 +67,7 @@
               >CATEGORIA</nuxt-link
             >
           </li>
-          <li>
+          <!--           <li>
             <nuxt-link
               :to="user ? '/profile' : '/auth'"
               @click="scrollToTop()"
@@ -75,7 +75,7 @@
             >
               {{ user ? "PERFIL" : "LOG IN" }}
             </nuxt-link>
-          </li>
+          </li> -->
         </ul>
       </header>
     </div>
@@ -84,7 +84,7 @@
       <header
         class="header mx-auto px-[10%] py-[2%] flex items-center justify-between"
       >
-        <nuxt-link to="/" class="">
+        <nuxt-link to="/">
           <nuxt-icon
             :name="
               themeStore.isDarkTheme ? 'logo-text-white' : 'logo-text-black'
@@ -111,17 +111,17 @@
             </li>
           </ul>
         </nav>
-        <nav class="flex items-center">
+        <nav class="items-center">
           <button class="flex" @click="themeStore.toggleTheme()">
             <i
-              class="material-icons-outlined text-surface-900 dark:text-surface-200 border rounded-full p-1 mx-8 scale-90"
+              class="material-icons-outlined theme-icon scale-90"
               :class="{ 'border-surface-900': !themeStore.isDarkTheme }"
               :title="themeStore.isDarkTheme ? 'Light mode' : 'Dark mode'"
             >
               {{ themeStore.isDarkTheme ? "light_mode" : "dark_mode" }}
             </i>
           </button>
-          <ul>
+          <!--           <ul>
             <li>
               <nuxt-link
                 :to="user ? '/profile' : '/auth'"
@@ -131,7 +131,7 @@
                 {{ user ? "PERFIL" : "LOG IN" }}
               </nuxt-link>
             </li>
-          </ul>
+          </ul> -->
         </nav>
       </header>
     </div>
@@ -146,7 +146,7 @@
     <!-- FOOTER START -->
     <div>
       <footer
-        class="mx-auto px-[10%] py-[6%] grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 auto-cols-auto gap-2 justify-between border-t-2 border-surface-600 dark:border-surface-300"
+        class="relative mx-auto px-[10%] py-[6%] grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 auto-cols-auto gap-2 justify-between border-t-2 border-surface-600 dark:border-surface-300"
       >
         <div class="col-span-full">
           <nuxt-link to="/" @click="scrollToTop()">
@@ -158,13 +158,8 @@
               filled
             />
           </nuxt-link>
-          <p class="text-xs lg:text-sm mb-0">
-            Made with
-            <span class="material-icons-outlined align-text-bottom">cake</span>
-            in Reus
-          </p>
         </div>
-        <div class="">
+        <div>
           <nav>
             <ul>
               <h6 class="font-bold text-xs lg:text-sm mb-2">Web map</h6>
@@ -181,10 +176,10 @@
               </li>
               <li class="text-xs lg:text-sm">
                 <nuxt-link to="/category" @click="scrollToTop()"
-                  >Categoria</nuxt-link
+                  >Categories</nuxt-link
                 >
               </li>
-              <li class="text-xs lg:text-sm">
+              <!--               <li class="text-xs lg:text-sm">
                 <nuxt-link to="/auth" @click="scrollToTop()">Log in</nuxt-link>
               </li>
               <li class="text-xs lg:text-sm">
@@ -196,14 +191,14 @@
                 <nuxt-link to="/profile" @click="scrollToTop()"
                   >Perfil</nuxt-link
                 >
-              </li>
+              </li> -->
             </ul>
           </nav>
         </div>
-        <div class="">
+        <div>
           <nav>
             <ul>
-              <h6 class="font-bold text-xs lg:text-sm mb-2">Meet me</h6>
+              <h6 class="font-bold text-xs lg:text-sm mb-2">Coneixe'm</h6>
               <li class="text-xs lg:text-sm">
                 <nuxt-link to="/contact" @click="scrollToTop()"
                   >Contacte</nuxt-link
@@ -212,7 +207,34 @@
             </ul>
           </nav>
         </div>
-        <div class="">
+        <div>
+          <nav>
+            <ul>
+              <h6 class="font-bold text-xs lg:text-sm mb-2">Categories</h6>
+              <li class="text-xs lg:text-sm">
+                <nuxt-link to="/category/pastissos" @click="scrollToTop()"
+                  >Pastissos</nuxt-link
+                >
+              </li>
+              <li class="text-xs lg:text-sm">
+                <nuxt-link to="/category/brownies" @click="scrollToTop()"
+                  >Brownies</nuxt-link
+                >
+              </li>
+              <li class="text-xs lg:text-sm">
+                <nuxt-link to="/category/cheesecakes" @click="scrollToTop()"
+                  >Cheesecakes</nuxt-link
+                >
+              </li>
+              <li class="text-xs lg:text-sm">
+                <nuxt-link to="/category/tematitzats" @click="scrollToTop()"
+                  >Tematitzats</nuxt-link
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- <div>
           <nav>
             <ul>
               <h6 class="font-bold text-xs lg:text-sm mb-2">Auth Links</h6>
@@ -227,7 +249,7 @@
             </ul>
           </nav>
         </div>
-        <div class="">
+        <div>
           <nav>
             <ul>
               <h6 class="font-bold text-xs lg:text-sm mb-2">User Links</h6>
@@ -238,6 +260,14 @@
               </li>
             </ul>
           </nav>
+        </div> -->
+        <div class="absolute inset-x-0 bottom-0 flex justify-end">
+          <p class="text-xs tracking-wide m-4 opacity-60">
+            Made with<span
+              class="material-icons-outlined align-text-bottom scale-[.8]"
+              >local_fire_department</span
+            >by MoltenDevLabs ©
+          </p>
         </div>
       </footer>
     </div>
@@ -267,11 +297,4 @@ const scrollToTop = () => {
 };
 </script>
 
-<style scooped>
-.nuxt-icon svg {
-  font-size: 2em;
-  margin-bottom: 0;
-  object-fit: fill;
-  width: fit-content;
-}
-</style>
+<style scooped></style>
