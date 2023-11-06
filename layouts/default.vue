@@ -67,15 +67,6 @@
               >CATEGORIA</nuxt-link
             >
           </li>
-          <!--           <li>
-            <nuxt-link
-              :to="user ? '/profile' : '/auth'"
-              @click="scrollToTop()"
-              class="btn"
-            >
-              {{ user ? "PERFIL" : "LOG IN" }}
-            </nuxt-link>
-          </li> -->
         </ul>
       </header>
     </div>
@@ -121,17 +112,6 @@
               {{ themeStore.isDarkTheme ? "light_mode" : "dark_mode" }}
             </i>
           </button>
-          <!--           <ul>
-            <li>
-              <nuxt-link
-                :to="user ? '/profile' : '/auth'"
-                @click="scrollToTop()"
-                class="btn"
-              >
-                {{ user ? "PERFIL" : "LOG IN" }}
-              </nuxt-link>
-            </li>
-          </ul> -->
         </nav>
       </header>
     </div>
@@ -167,9 +147,6 @@
                 <nuxt-link to="/" @click="scrollToTop()">Home</nuxt-link>
               </li>
               <li class="text-xs lg:text-sm">
-                <nuxt-link to="/about" @click="scrollToTop()">About</nuxt-link>
-              </li>
-              <li class="text-xs lg:text-sm">
                 <nuxt-link to="/contact" @click="scrollToTop()"
                   >Contacte</nuxt-link
                 >
@@ -179,19 +156,6 @@
                   >Categories</nuxt-link
                 >
               </li>
-              <!--               <li class="text-xs lg:text-sm">
-                <nuxt-link to="/auth" @click="scrollToTop()">Log in</nuxt-link>
-              </li>
-              <li class="text-xs lg:text-sm">
-                <nuxt-link to="/auth/signup" @click="scrollToTop()"
-                  >Sign up</nuxt-link
-                >
-              </li>
-              <li class="text-xs lg:text-sm">
-                <nuxt-link to="/profile" @click="scrollToTop()"
-                  >Perfil</nuxt-link
-                >
-              </li> -->
             </ul>
           </nav>
         </div>
@@ -234,33 +198,6 @@
             </ul>
           </nav>
         </div>
-        <!-- <div>
-          <nav>
-            <ul>
-              <h6 class="font-bold text-xs lg:text-sm mb-2">Auth Links</h6>
-              <li class="text-xs lg:text-sm">
-                <nuxt-link to="/auth" @click="scrollToTop()">Log in</nuxt-link>
-              </li>
-              <li class="text-xs lg:text-sm">
-                <nuxt-link to="/auth/signup" @click="scrollToTop()"
-                  >Sign up</nuxt-link
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div>
-          <nav>
-            <ul>
-              <h6 class="font-bold text-xs lg:text-sm mb-2">User Links</h6>
-              <li class="text-xs lg:text-sm">
-                <nuxt-link to="/profile" @click="scrollToTop()"
-                  >Profile</nuxt-link
-                >
-              </li>
-            </ul>
-          </nav>
-        </div> -->
         <div class="absolute inset-x-0 bottom-0 flex justify-end">
           <p class="text-xs tracking-wide m-4 opacity-60">
             Made with<span

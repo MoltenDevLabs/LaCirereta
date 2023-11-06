@@ -11,7 +11,7 @@
     </p>
     <div class="flex my-8">
       <button class="btn text-sm">
-        <nuxt-link to="/category">Deleita't</nuxt-link>
+        <nuxt-link to="/category">Deleitat</nuxt-link>
       </button>
       <button class="btn-text text-sm ml-4">
         <nuxt-link to="/contact">Coneix la repostera</nuxt-link>
