@@ -4,43 +4,43 @@ export const useCakeStore = defineStore("cakeStore", () => {
       id: 1,
       title: "cake 1",
       description: "cake 1 description",
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
+      img: "https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/selecta-cakes/sample.jpg?t=2023-11-06T21%3A49%3A51.835Z",
     },
     {
       id: 2,
       title: "cake 2",
       description: "cake 2 description",
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
+      img: "https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/selecta-cakes/sample.jpg?t=2023-11-06T21%3A49%3A51.835Z",
     },
     {
       id: 3,
       title: "cake 3",
       description: "cake 3 description",
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
+      img: "https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/selecta-cakes/sample.jpg?t=2023-11-06T21%3A49%3A51.835Z",
     },
     {
       id: 4,
       title: "cake 4",
       description: "cake 4 description",
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
+      img: "https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/selecta-cakes/sample.jpg?t=2023-11-06T21%3A49%3A51.835Z",
     },
     {
       id: 5,
       title: "cake 5",
       description: "cake 5 description",
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
+      img: "https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/selecta-cakes/sample.jpg?t=2023-11-06T21%3A49%3A51.835Z",
     },
     {
       id: 6,
       title: "cake 6",
       description: "cake 6 description",
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
+      img: "https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/selecta-cakes/sample.jpg?t=2023-11-06T21%3A49%3A51.835Z",
     },
     {
       id: 7,
       title: "cake 7",
       description: "cake 7 description",
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
+      img: "https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/selecta-cakes/sample.jpg?t=2023-11-06T21%3A49%3A51.835Z",
     },
   ]);
 
@@ -49,31 +49,25 @@ export const useCakeStore = defineStore("cakeStore", () => {
       id: 1,
       title: "pastissos",
       description: "",
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
+      img: "https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/selecta-cakes/sample.jpg?t=2023-11-06T21%3A49%3A51.835Z",
     },
     {
       id: 2,
       title: "brownies",
       description: "",
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
+      img: "https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/selecta-cakes/sample.jpg?t=2023-11-06T21%3A49%3A51.835Z",
     },
     {
       id: 3,
       title: "cheesecakes",
       description: "",
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
+      img: "https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/selecta-cakes/sample.jpg?t=2023-11-06T21%3A49%3A51.835Z",
     },
-    /*     {
-      id: 4,
-      title: "tradicionals",
-      description: "",
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
-    }, */
     {
-      id: 5,
+      id: 4,
       title: "tematitzats",
       description: "",
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
+      img: "https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/selecta-cakes/sample.jpg?t=2023-11-06T21%3A49%3A51.835Z",
     },
   ]);
 
@@ -88,7 +82,7 @@ export const useCakeStore = defineStore("cakeStore", () => {
         Mitjà: 20.5,
         Gran: 30.5,
       },
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
+      img: "https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/selecta-cakes/sample.jpg?t=2023-11-06T21%3A49%3A51.835Z",
     },
     {
       id: 102,
@@ -100,7 +94,7 @@ export const useCakeStore = defineStore("cakeStore", () => {
         Mitjà: 21.5,
         Gran: 93.5,
       },
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
+      img: "https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/selecta-cakes/sample.jpg?t=2023-11-06T21%3A49%3A51.835Z",
     },
     {
       id: 103,
@@ -112,7 +106,7 @@ export const useCakeStore = defineStore("cakeStore", () => {
         Mitjà: 87.1,
         Gran: 153.2,
       },
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
+      img: "https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/selecta-cakes/sample.jpg?t=2023-11-06T21%3A49%3A51.835Z",
     },
     {
       id: 104,
@@ -124,7 +118,7 @@ export const useCakeStore = defineStore("cakeStore", () => {
         Mitjà: 87.1,
         Gran: 153.2,
       },
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
+      img: "https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/selecta-cakes/sample.jpg?t=2023-11-06T21%3A49%3A51.835Z",
     },
   ]);
   const browniesList = ref([
@@ -137,7 +131,7 @@ export const useCakeStore = defineStore("cakeStore", () => {
         Mitjà: 87.1,
         Gran: 153.2,
       },
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
+      img: "https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/selecta-cakes/sample.jpg?t=2023-11-06T21%3A49%3A51.835Z",
     },
     {
       id: 202,
@@ -149,7 +143,7 @@ export const useCakeStore = defineStore("cakeStore", () => {
         Mitjà: 87.1,
         Gran: 153.2,
       },
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
+      img: "https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/selecta-cakes/sample.jpg?t=2023-11-06T21%3A49%3A51.835Z",
     },
     {
       id: 203,
@@ -160,7 +154,7 @@ export const useCakeStore = defineStore("cakeStore", () => {
         Mitjà: 87.1,
         Gran: 153.2,
       },
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
+      img: "https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/selecta-cakes/sample.jpg?t=2023-11-06T21%3A49%3A51.835Z",
     },
     {
       id: 204,
@@ -171,7 +165,7 @@ export const useCakeStore = defineStore("cakeStore", () => {
         Mitjà: 87.1,
         Gran: 153.2,
       },
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
+      img: "https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/selecta-cakes/sample.jpg?t=2023-11-06T21%3A49%3A51.835Z",
     },
     {
       id: 205,
@@ -182,7 +176,7 @@ export const useCakeStore = defineStore("cakeStore", () => {
         Mitjà: 87.1,
         Gran: 153.2,
       },
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
+      img: "https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/selecta-cakes/sample.jpg?t=2023-11-06T21%3A49%3A51.835Z",
     },
     {
       id: 206,
@@ -193,7 +187,7 @@ export const useCakeStore = defineStore("cakeStore", () => {
         Mitjà: 87.1,
         Gran: 153.2,
       },
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
+      img: "https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/selecta-cakes/sample.jpg?t=2023-11-06T21%3A49%3A51.835Z",
     },
     {
       id: 207,
@@ -204,7 +198,7 @@ export const useCakeStore = defineStore("cakeStore", () => {
         Mitjà: 87.1,
         Gran: 153.2,
       },
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
+      img: "https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/selecta-cakes/sample.jpg?t=2023-11-06T21%3A49%3A51.835Z",
     },
     {
       id: 208,
@@ -215,7 +209,7 @@ export const useCakeStore = defineStore("cakeStore", () => {
         Mitjà: 87.1,
         Gran: 153.2,
       },
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
+      img: "https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/selecta-cakes/sample.jpg?t=2023-11-06T21%3A49%3A51.835Z",
     },
     {
       id: 209,
@@ -226,7 +220,7 @@ export const useCakeStore = defineStore("cakeStore", () => {
         Mitjà: 87.1,
         Gran: 153.2,
       },
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
+      img: "https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/selecta-cakes/sample.jpg?t=2023-11-06T21%3A49%3A51.835Z",
     },
   ]);
   const cheesecakesList = ref([
@@ -239,21 +233,12 @@ export const useCakeStore = defineStore("cakeStore", () => {
         Mitjà: 87.1,
         Gran: 153.2,
       },
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
+      img: "https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/selecta-cakes/sample.jpg?t=2023-11-06T21%3A49%3A51.835Z",
     },
   ]);
-  /*   const tradicionalsList = ref([
-    {
-      id: 401,
-      title: "pastis tradicional de prova",
-      description: "Aixo es un text de prova pel tradicional",
-      price: "300.00€",
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
-    },
-  ]); */
   const tematitzatsList = ref([
     {
-      id: 501,
+      id: 401,
       title: "pastis tematitzat de prova",
       description: "Aixo es un text de prova pel pastis tematitzat",
       price: {
@@ -261,7 +246,7 @@ export const useCakeStore = defineStore("cakeStore", () => {
         Mitjà: 87.1,
         Gran: 153.2,
       },
-      img: "https://xdvtytngvdbnyaljyatu.supabase.co/storage/v1/object/public/featured-image/featured3.jpg",
+      img: "https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/selecta-cakes/sample.jpg?t=2023-11-06T21%3A49%3A51.835Z",
     },
   ]);
   return {
