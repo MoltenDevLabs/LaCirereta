@@ -1,61 +1,82 @@
-## Project Title:
+# Selecta Cakes Web App
 
-Selecta Cakes
+## Table of Contents
 
-## Project Description:
+- [Project Overview](#project-overview)
+- [Tech Stack](#tech-stack)
+- [Installation & Setup](#installation-and-setup)
+  - [Project Minimal Starter](#project-minimal-starter)
+  - [Deploy on Netlify Setup](#deploy-on-netlify-setup)
+  - [Supabase Integration](#supabase-integration)
 
-This project is a web app built like a bakery e-commerce focused on cakes.
-It offers the functionality of a full built e-commerce.
+## Project Overview
 
-## Tech Stack:
+**Selecta Cakes** is an e-commerce platform designed to delight regular individuals looking for exquisite, handcrafted cakes for their special occasions. We understand that every celebration deserves a remarkable cake, and that's where we come in.
 
-This project makes use of:
+# For Those Special Moments
 
-- HTML5 as the markup language
-- Tailwind as the styling tool
-- Vue and Nuxt 3 as the Javascript framework
-- Supabase as the backend
-- Netlify for deploying
+# Who We Serve
 
-## Installation & Setup:
+At Selecta Cakes, our primary audience is you – the everyday person with a penchant for life's special moments. Whether it's a birthday, anniversary, wedding, or any other milestone, we're here to make your celebration sweeter and more memorable.
 
-# Project minimal starter
+# Our Distinctive Features
 
-# npm
+What sets Selecta Cakes apart is our unwavering commitment to quality, proximity, and customization. We don't just bake cakes; we create edible masterpieces. Here's why you'll love us:
 
+- **Quality Ingredients:** We believe that a great cake starts with great ingredients. Every cake we craft is a masterpiece of taste, using only the finest, freshest, and locally sourced ingredients.
+
+- **Close to You:** We're not just an online store; we're your local bakery. We understand the importance of a cake that's not just delicious but also delivered to your doorstep in pristine condition. Our proximity ensures your cake arrives fresh and perfect.
+
+- **Tailored to You:** Your cake is personal, and we treat it that way. Selecta Cakes offers a unique customization experience. Want a specific flavor, design, or dietary preference? We've got you covered. Your cake, your way.
+
+# Our Goal
+
+Our primary goal at Selecta Cakes is to provide you with a seamless online storefront for all your cake needs. You can explore our selection, view mouthwatering pictures, and read detailed descriptions to make an informed choice. Celebrate life's moments with the perfect cake.
+
+Selecta Cakes is where quality, convenience, and customization meet. We look forward to making your celebrations even more extraordinary.
+
+## Tech Stack
+
+The project leverages a cutting-edge tech stack to deliver a seamless and feature-rich experience. Here are the key technologies used:
+
+- **HTML5:** The foundational markup language ensuring a modern and robust app structure.
+- **Tailwind CSS:** A powerful styling tool that adds elegance and responsiveness to the app's design, enhancing user experience.
+- **Vue and Nuxt 3:** Dynamic JavaScript frameworks that provide flexibility, interactivity, and speed, resulting in a seamless and engaging user interface.
+- **Supabase:** As the backend technology, Supabase empowers the app with data management, security, and scalability, ensuring smooth performance and reliable data handling.
+- **Netlify:** The chosen deployment platform, known for its efficiency and hassle-free delivery of the app to users.
+
+## Installation & Setup
+
+To get started with the Coral Mussòlidaria Reus Mobile App, follow these setup instructions.
+
+### Project Minimal Starter
+
+To install the necessary dependencies, run the following command:
+
+```bash
 npm install
-
-# .env
-
-Create a .env file with Supabase info:
-SUPABASE_URL= "https://someUrl.supabase.co"
-SUPABASE_KEY= "someKey"
-
----
+```
 
 ## Deploy on netlify setup
 
-# package.json
+Update your package.json with the following script for Netlify deployment:
 
 "scripts": {
 "predeploy": "npm run build"
 }
 
-# netlify.toml
-
-Create a netlify.toml file and include the code below
+Create a netlify.toml file and include the following code:
 
 [build]
 command = "npm run generate"
 publish = "dist"
 
----
+## Supabase Integration
 
-## If there's supabase in the project
+If your project includes Supabase, make the following configurations:
 
-# nuxt.config.ts
-
-Add the following code to the nuxt.config.ts file
+Update nuxt.config.ts
+Add the following code to your nuxt.config.ts file:
 
 supabase: {
 redirect: false,
@@ -71,6 +92,9 @@ supabaseKey: process.env.SUPABASE_KEY,
 },
 }
 
-```
+Create a .env file with your Supabase information:
 
-```
+SUPABASE_URL="https://someUrl.supabase.co"
+SUPABASE_KEY="someKey"
+
+With these steps, you'll be well-prepared to run and deploy the Selecta Cakes Web App.
