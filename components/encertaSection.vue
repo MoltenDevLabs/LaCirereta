@@ -6,8 +6,5 @@
       Tant si necessites un pastis tradicional com un de tematitzat, trobarás
       allò que vols!
     </p>
-    <button @click="$router.push('/categoria')" class="btn">
-      Troba el teu
-    </button>
   </div>
 </template>

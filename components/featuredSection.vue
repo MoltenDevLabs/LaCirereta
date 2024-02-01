@@ -7,23 +7,61 @@
       </div>
     </div>
     <div v-else>
-      <div class="relative">
-        <div
-          id="featuredListContainer"
-          class="flex flex-nowrap h-max overflow-x-hidden scroll-smooth -mx-2"
-        >
-          <cakeCard v-for="cake in featuredList" :key="cake.id" :cake="cake" />
+      <!-- UPPER ROW -->
+      <div class="relative overflow-hidden">
+        <div class="flex gap-4">
+          <div
+            id="featuredListUpperContainer"
+            class="loop-scroll-left flex flex-nowrap h-max -mx-2"
+          >
+            <cakeCard
+              v-for="cake in featuredList"
+              :key="cake.id"
+              :cake="cake"
+            />
+          </div>
+          <div>
+            <div
+              id="featuredListUpperContainer"
+              class="loop-scroll-left flex flex-nowrap h-max -mx-2"
+              aria-hidden="true"
+            >
+              <cakeCard
+                v-for="cake in featuredList"
+                :key="cake.id"
+                :cake="cake"
+              />
+            </div>
+          </div>
         </div>
-        <i
-          class="absolute top-1/2 left-5 border rounded-full border-surface-300 text-surface-300 z-10 scale-110 hover:bg-surface-600 transition-colors duration-500 cursor-pointer material-icons-outlined"
-          @click="scrollLeft"
-          >chevron_left</i
-        >
-        <i
-          class="absolute top-1/2 right-5 border rounded-full border-surface-300 text-surface-300 z-10 scale-110 hover:bg-surface-600 transition-colors duration-500 cursor-pointer material-icons-outlined"
-          @click="scrollRight"
-          >chevron_right</i
-        >
+      </div>
+      <!-- BOTTOM ROW -->
+      <div class="relative overflow-hidden my-4">
+        <div class="flex gap-4">
+          <div
+            id="featuredListBottomContainer"
+            class="loop-scroll-right flex flex-nowrap h-max -mx-2"
+          >
+            <cakeCard
+              v-for="cake in featuredList"
+              :key="cake.id"
+              :cake="cake"
+            />
+          </div>
+          <div>
+            <div
+              id="featuredListBottomContainer"
+              class="loop-scroll-right flex flex-nowrap h-max -mx-2"
+              aria-hidden="true"
+            >
+              <cakeCard
+                v-for="cake in featuredList"
+                :key="cake.id"
+                :cake="cake"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -33,13 +71,30 @@
 import { useCakeStore } from "@/stores/cakeStore";
 const cakeStore = useCakeStore();
 const featuredList = cakeStore.featuredList;
-
-const scrollLeft = () => {
-  const left = document.getElementById("featuredListContainer");
-  left.scrollLeft -= 500;
-};
-const scrollRight = () => {
-  const right = document.getElementById("featuredListContainer");
-  right.scrollLeft += 500;
-};
 </script>
+
+<style scoped>
+@keyframes loop-scroll-left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes loop-scroll-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+#featuredListUpperContainer {
+  animation: loop-scroll-left 25s linear infinite;
+}
+#featuredListBottomContainer {
+  animation: loop-scroll-right 30s linear infinite;
+}
+</style>

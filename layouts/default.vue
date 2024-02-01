@@ -57,9 +57,6 @@
           </button>
           <li><nuxt-link to="/" @click="scrollToTop()">HOME</nuxt-link></li>
           <li>
-            <nuxt-link to="/about" @click="scrollToTop()">ABOUT</nuxt-link>
-          </li>
-          <li>
             <nuxt-link to="/contact" @click="scrollToTop()">CONTACTE</nuxt-link>
           </li>
           <li>
@@ -87,9 +84,6 @@
         <nav class="flex gap-4 items-center">
           <ul class="flex gap-12 text-lg uppercase tracking-widest my-4">
             <li><nuxt-link to="/" @click="scrollToTop()">HOME</nuxt-link></li>
-            <li>
-              <nuxt-link to="/about" @click="scrollToTop()">ABOUT</nuxt-link>
-            </li>
             <li>
               <nuxt-link to="/contact" @click="scrollToTop()"
                 >CONTACTE</nuxt-link
@@ -166,33 +160,6 @@
               <li class="text-xs lg:text-sm">
                 <nuxt-link to="/contact" @click="scrollToTop()"
                   >Contacte</nuxt-link
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div>
-          <nav>
-            <ul>
-              <h6 class="font-bold text-xs lg:text-sm mb-2">Categories</h6>
-              <li class="text-xs lg:text-sm">
-                <nuxt-link to="/category/pastissos" @click="scrollToTop()"
-                  >Pastissos</nuxt-link
-                >
-              </li>
-              <li class="text-xs lg:text-sm">
-                <nuxt-link to="/category/brownies" @click="scrollToTop()"
-                  >Brownies</nuxt-link
-                >
-              </li>
-              <li class="text-xs lg:text-sm">
-                <nuxt-link to="/category/cheesecakes" @click="scrollToTop()"
-                  >Cheesecakes</nuxt-link
-                >
-              </li>
-              <li class="text-xs lg:text-sm">
-                <nuxt-link to="/category/tematitzats" @click="scrollToTop()"
-                  >Tematitzats</nuxt-link
                 >
               </li>
             </ul>

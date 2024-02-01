@@ -255,7 +255,6 @@ export const useCakeStore = defineStore("cakeStore", () => {
     pastissosList,
     browniesList,
     cheesecakesList,
-    /*     tradicionalsList, */
     tematitzatsList,
   };
 });
