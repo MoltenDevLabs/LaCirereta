@@ -17,7 +17,7 @@
       </p>
       <div class="flex justify-evenly my-8">
         <button class="btn text-sm">
-          <nuxt-link to="/about">Deleita't</nuxt-link>
+          <nuxt-link to="/pastissos">Deleita't</nuxt-link>
         </button>
         <button class="btn-text text-sm">
           <nuxt-link to="/contact">Coneix la repostera</nuxt-link>

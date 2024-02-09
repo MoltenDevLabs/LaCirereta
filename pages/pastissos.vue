@@ -78,6 +78,14 @@
       </div>
     </div>
     <div v-if="$device.isDesktop" class="flex gap-8">
+      <h4 class="section-title">Tasta un pastís deliciós</h4>
+      <p>
+        Els meus pastissos personalitzats són la meva passió i el meu segell
+        distintiu. Els faig amb tota la cura i el detall que es mereixen, segons
+        els gustos i les preferències dels meus clients. Puc fer pastissos de
+        qualsevol ingredient, decoració o temàtica que vulguis. Només has de
+        dir-me quina és la teva idea i jo la faré realitat.
+      </p>
       <div class="w-1/2 h-auto object-contain flex items-start not-prose">
         <img
           :src="cakeProduct.img"

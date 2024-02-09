@@ -7,12 +7,10 @@
     <heroSection class="relative mb-40 md:mb-44 mt-20 md:mt-12" />
     <!-- ENCERTA SECTION -->
     <encertaSection class="fade-in-effect mb-24" />
-    <!-- CATEGORY SECTION -->
-    <categorySection class="fade-in-effect mb-24" />
+    <!-- FEATURED SECTION -->
+    <featuredSection class="fade-in-effect mb-24" />
     <!-- CTA SECTION-->
     <ctaSection class="fade-in-effect mb-24" />
-    <!-- FEATURED SECTION -->
-    <featuredSection class="fade-in-effect" />
   </div>
 </template>
 
