@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <h4 class="section-title">Troba el dolç ideal per a cada ocasió</h4>
+    <h4 class="section-title">Troba el pastís ideal per a cada ocasió</h4>
     <div class="flex justify-center align-middle items-center">
       <div
         class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 auto-cols-auto gap-4"
