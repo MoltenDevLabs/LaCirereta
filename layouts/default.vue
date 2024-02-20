@@ -59,11 +59,6 @@
           <li>
             <nuxt-link to="/contact" @click="scrollToTop()">CONTACTE</nuxt-link>
           </li>
-          <li>
-            <nuxt-link to="/category" @click="scrollToTop()"
-              >CATEGORIA</nuxt-link
-            >
-          </li>
         </ul>
       </header>
     </div>
@@ -87,11 +82,6 @@
             <li>
               <nuxt-link to="/contact" @click="scrollToTop()"
                 >CONTACTE</nuxt-link
-              >
-            </li>
-            <li>
-              <nuxt-link to="/category" @click="scrollToTop()"
-                >CATEGORIES</nuxt-link
               >
             </li>
           </ul>
@@ -143,11 +133,6 @@
               <li class="text-xs lg:text-sm">
                 <nuxt-link to="/contact" @click="scrollToTop()"
                   >Contacte</nuxt-link
-                >
-              </li>
-              <li class="text-xs lg:text-sm">
-                <nuxt-link to="/category" @click="scrollToTop()"
-                  >Categories</nuxt-link
                 >
               </li>
             </ul>

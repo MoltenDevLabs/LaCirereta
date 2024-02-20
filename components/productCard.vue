@@ -1,45 +1,20 @@
 <template>
-  <div
-    class="card not-prose border-none shadow-none flex flex-col items-center"
-  >
-    <img
-      :src="imageSrc"
-      alt="Some Image"
-      class="m-0 md:m-0 rounded hover:brightness-105 transform-gpu duration-500 cursor-pointer"
-      @click="
-        $router.push({
-          name: product,
-          path: `/category/pastissos/${title}`,
-        })
-      "
-    />
-    <div class="text-center my-1">
-      <p class="text-lg font-light tracking-wider font-body">
-        {{ title.toUpperCase() }}
-      </p>
+  <article class="not-prose w-16 flex flex-row">
+    <div class="rounded overflow-hidden shadow-lg">
+      <img
+        :src="cake.img"
+        alt="Cake img"
+        class="my-0 transition-transform duration-500 hover:scale-110"
+      />
     </div>
-  </div>
+  </article>
 </template>
 
 <script setup>
-const props = defineProps({
-  title: {
-    type: String,
-    required: true,
-  },
-  description: {
-    type: String,
-    required: true,
-  },
-  price: {
+defineProps({
+  cake: {
     type: Object,
-    required: true,
-  },
-  imageSrc: {
-    type: String,
     required: true,
   },
 });
 </script>
-
-<style scoped></style>
