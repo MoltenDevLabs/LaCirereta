@@ -12,10 +12,10 @@ export default defineNuxtConfig({
   ],
   app: {
     head: {
-      title: "Selecta Cakes",
+      title: "La Cirereta",
       meta: [
         {
-          name: "Selecta Cakes",
+          name: "La Cirereta",
           content: "Pastissos increïbles",
           charset: "UTF-8",
         },
@@ -37,11 +37,7 @@ export default defineNuxtConfig({
   },
   googleFonts: {
     families: {
-      Lato: {
-        wght: [100, 200, 300, 400, 500, 600, 700, 800, 900],
-        ital: [100, 200, 300, 400, 500, 600, 700, 800, 900],
-      },
-      OpenSans: {
+      Montserrat: {
         wght: [100, 200, 300, 400, 500, 600, 700, 800, 900],
         ital: [100, 200, 300, 400, 500, 600, 700, 800, 900],
       },

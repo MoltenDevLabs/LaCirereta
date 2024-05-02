@@ -75,8 +75,8 @@ module.exports = {
         },
       }, */
       fontFamily: {
-        header: ["Lato", "sans-serif"],
-        body: ["OpenSans", "sans-serif"],
+        header: ["Montserrat", "sans-serif"],
+        body: ["Montserrat", "sans-serif"],
       },
     },
     backgroundImage: {

@@ -1,4 +1,4 @@
-# Selecta Cakes Web App
+# La Cirereta Web App
 
 ## Table of Contents
 
@@ -11,29 +11,29 @@
 
 ## Project Overview
 
-**Selecta Cakes** is an e-commerce platform designed to delight regular individuals looking for exquisite, handcrafted cakes for their special occasions. We understand that every celebration deserves a remarkable cake, and that's where we come in.
+**La Cirereta** is an e-commerce platform designed to delight regular individuals looking for exquisite, handcrafted cakes for their special occasions. We understand that every celebration deserves a remarkable cake, and that's where we come in.
 
 # For Those Special Moments
 
 # Who We Serve
 
-At Selecta Cakes, our primary audience is you – the everyday person with a penchant for life's special moments. Whether it's a birthday, anniversary, wedding, or any other milestone, we're here to make your celebration sweeter and more memorable.
+At La Cirereta, our primary audience is you – the everyday person with a penchant for life's special moments. Whether it's a birthday, anniversary, wedding, or any other milestone, we're here to make your celebration sweeter and more memorable.
 
 # Our Distinctive Features
 
-What sets Selecta Cakes apart is our unwavering commitment to quality, proximity, and customization. We don't just bake cakes; we create edible masterpieces. Here's why you'll love us:
+What sets La Cirereta apart is our unwavering commitment to quality, proximity, and customization. We don't just bake cakes; we create edible masterpieces. Here's why you'll love us:
 
 - **Quality Ingredients:** We believe that a great cake starts with great ingredients. Every cake we craft is a masterpiece of taste, using only the finest, freshest, and locally sourced ingredients.
 
 - **Close to You:** We're not just an online store; we're your local bakery. We understand the importance of a cake that's not just delicious but also delivered to your doorstep in pristine condition. Our proximity ensures your cake arrives fresh and perfect.
 
-- **Tailored to You:** Your cake is personal, and we treat it that way. Selecta Cakes offers a unique customization experience. Want a specific flavor, design, or dietary preference? We've got you covered. Your cake, your way.
+- **Tailored to You:** Your cake is personal, and we treat it that way. La Cirereta offers a unique customization experience. Want a specific flavor, design, or dietary preference? We've got you covered. Your cake, your way.
 
 # Our Goal
 
-Our primary goal at Selecta Cakes is to provide you with a seamless online storefront for all your cake needs. You can explore our selection, view mouthwatering pictures, and read detailed descriptions to make an informed choice. Celebrate life's moments with the perfect cake.
+Our primary goal at La Cirereta is to provide you with a seamless online storefront for all your cake needs. You can explore our selection, view mouthwatering pictures, and read detailed descriptions to make an informed choice. Celebrate life's moments with the perfect cake.
 
-Selecta Cakes is where quality, convenience, and customization meet. We look forward to making your celebrations even more extraordinary.
+La Cirereta is where quality, convenience, and customization meet. We look forward to making your celebrations even more extraordinary.
 
 ## Tech Stack
 
@@ -47,7 +47,7 @@ The project leverages a cutting-edge tech stack to deliver a seamless and featur
 
 ## Installation & Setup
 
-To get started with the Selecta Cakes Web App, follow these setup instructions.
+To get started with the La Cirereta Web App, follow these setup instructions.
 
 ### Project Minimal Starter
 
@@ -105,4 +105,4 @@ SUPABASE_URL="https://someUrl.supabase.co"
 SUPABASE_KEY="someKey"
 ```
 
-With these steps, you'll be well-prepared to run and deploy the Selecta Cakes Web App.
+With these steps, you'll be well-prepared to run and deploy the La Cirereta Web App.

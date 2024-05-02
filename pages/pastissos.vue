@@ -83,7 +83,7 @@
         <p>
           Els meus pastissos personalitzats són la meva passió i el meu segell
           distintiu. Els faig amb tota la cura i el detall que es mereixen,
-          segons els gustos i les preferències dels meus clients. Puc fer
+          segons els teus gustos i preferències. Puc fer
           pastissos de qualsevol ingredient, decoració o temàtica que vulguis.
           Només has de dir-me quina és la teva idea i jo la faré realitat.
         </p>
@@ -93,7 +93,7 @@
         <div class="w-3/5 flex flex-col items-start not-prose">
           <div class="h-auto object-contain">
             <img
-              src="https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/selecta-cakes/sample.jpg?t=2024-02-09T13%3A23%3A50.827Z"
+              src="https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/selecta-cakes/potter/potter-front.jpg?t=2024-03-14T08%3A23%3A29.565Z"
               alt="Cake Image"
               class="rounded-md my-4 not-prose"
             />

@@ -11,6 +11,8 @@
     <featuredSection class="fade-in-effect mb-24" />
     <!-- CTA SECTION-->
     <ctaSection class="fade-in-effect mb-24" />
+    <!-- STATS SECTION-->
+    <statsSection class="fade-in-effect min-w-full" />
   </div>
 </template>
 

@@ -4,12 +4,7 @@
     <div v-if="$device.isMobileOrTablet">
       <header class="mx-auto px-[10%] flex items-center justify-between">
         <nuxt-link to="/" @click="scrollToTop()">
-          <nuxt-icon
-            :name="
-              themeStore.isDarkTheme ? 'logo-text-white' : 'logo-text-black'
-            "
-            filled
-          />
+          <nuxt-icon name="logo" filled />
         </nuxt-link>
         <ul>
           <button
@@ -68,17 +63,12 @@
         class="header mx-auto px-[10%] py-[2%] flex items-center justify-between"
       >
         <nuxt-link to="/">
-          <nuxt-icon
-            :name="
-              themeStore.isDarkTheme ? 'logo-text-white' : 'logo-text-black'
-            "
-            title="Home"
-            filled
-          />
+          <nuxt-icon name="logo" filled />
         </nuxt-link>
         <nav class="flex gap-4 items-center">
           <ul class="flex gap-12 text-lg uppercase tracking-widest my-4">
             <li><nuxt-link to="/" @click="scrollToTop()">HOME</nuxt-link></li>
+            <li><nuxt-link to="/pastissos" @click="scrollToTop()">PASTISSOS</nuxt-link></li>
             <li>
               <nuxt-link to="/contact" @click="scrollToTop()"
                 >CONTACTE</nuxt-link
@@ -87,7 +77,7 @@
           </ul>
         </nav>
         <nav class="items-center">
-          <button class="flex" @click="themeStore.toggleTheme()">
+<!--           <button class="flex" @click="themeStore.toggleTheme()">
             <i
               class="material-icons-outlined theme-icon scale-90"
               :class="{ 'border-surface-900': !themeStore.isDarkTheme }"
@@ -95,7 +85,7 @@
             >
               {{ themeStore.isDarkTheme ? "light_mode" : "dark_mode" }}
             </i>
-          </button>
+          </button> -->
         </nav>
       </header>
     </div>
@@ -109,49 +99,17 @@
 
     <!-- FOOTER START -->
     <div>
+      <footerBackground  class="absolute bottom-0"/>
       <footer
-        class="relative mx-auto px-[10%] py-[6%] grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 auto-cols-auto gap-2 justify-between border-t-2 border-surface-600 dark:border-surface-300"
+        class="relative mx-auto px-[10%] py-[6%]"
       >
-        <div class="col-span-full">
+        <div>
           <nuxt-link to="/" @click="scrollToTop()">
-            <nuxt-icon
-              :name="
-                themeStore.isDarkTheme ? 'logo-text-white' : 'logo-text-black'
-              "
-              title="Home"
-              filled
-            />
+            <nuxt-icon name="logo" filled />
           </nuxt-link>
         </div>
-        <div>
-          <nav>
-            <ul>
-              <h6 class="font-bold text-xs lg:text-sm mb-2">Web map</h6>
-              <li class="text-xs lg:text-sm">
-                <nuxt-link to="/" @click="scrollToTop()">Home</nuxt-link>
-              </li>
-              <li class="text-xs lg:text-sm">
-                <nuxt-link to="/contact" @click="scrollToTop()"
-                  >Contacte</nuxt-link
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div>
-          <nav>
-            <ul>
-              <h6 class="font-bold text-xs lg:text-sm mb-2">Coneixe'm</h6>
-              <li class="text-xs lg:text-sm">
-                <nuxt-link to="/contact" @click="scrollToTop()"
-                  >Contacte</nuxt-link
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
         <div class="absolute inset-x-0 bottom-0 flex justify-end">
-          <p class="text-xs tracking-wide m-4 opacity-60">
+          <p class="text-xs tracking-wide m-4 opacity-80">
             Made with<span
               class="material-icons-outlined align-text-bottom scale-[.8]"
               >local_fire_department</span
@@ -170,7 +128,6 @@ const hamburgerMenuLine =
 
 import { useThemeStore } from "@/stores/themeStore";
 const themeStore = useThemeStore();
-const user = useSupabaseUser();
 
 const navMenu = ref(false);
 const openMenu = () => {
@@ -186,4 +143,9 @@ const scrollToTop = () => {
 };
 </script>
 
-<style scooped></style>
+<style scooped>
+.nuxt-icon svg {
+  width: 1.5em;
+  height: 1.5em;
+}
+</style>
