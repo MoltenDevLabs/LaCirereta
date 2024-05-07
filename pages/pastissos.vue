@@ -91,19 +91,29 @@
       </div>
       <div class="flex flex-row gap-8">
         <div class="w-3/5 flex flex-col items-start not-prose">
-          <div class="h-auto object-contain">
+          <div class="h-auto object-contain relative">
             <img
-              src="https://lophahzsxonguopnjuyr.supabase.co/storage/v1/object/public/selecta-cakes/potter/potter-front.jpg?t=2024-03-14T08%3A23%3A29.565Z"
+              :src="selectedCake.img"
               alt="Cake Image"
               class="rounded-md my-4 not-prose"
+              loading="lazy"
             />
+            <div @click="previousCake">
+              <button class="absolute top-1/2 left-4 transform -translate-y-1/2 text-2xl">
+                <i class="material-icons">chevron_left</i>
+              </button>
+            </div>
+            <div @click="nextCake">
+              <button class="absolute top-1/2 right-4 transform -translate-y-1/2 text-2xl">
+                <i class="material-icons">chevron_right</i>
+              </button>
+            </div>
           </div>
           <div class="flex gap-4 overflow-hidden">
             <productCard
               v-for="cake in featuredList"
               :key="cake.id"
               :cake="cake"
-              class=""
             />
           </div>
         </div>
@@ -157,7 +167,7 @@
                 v-model="selectedTheme"
                 cols="30"
                 rows="4"
-                class="px-2 my-4 w-2/3 resize-none border rounded-md outline-surface-900 border-surface-900 dark:border-surface-300 dark:bg-surface-800"
+                class="px-2 my-4 w-2/3 resize-none border rounded-md outline-surface-900 border-surface-900"
                 placeholder="Explica la temàtica del teu pastís."
               ></textarea>
             </div>
@@ -168,6 +178,8 @@
               class="btn my-8 no-underline"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Contact us via WhatsApp"
+              tabindex="0"
             >
               Contacta
             </a>
@@ -182,11 +194,26 @@
 import { useCakeStore } from "@/stores/cakeStore";
 const cakeStore = useCakeStore();
 const featuredList = cakeStore.featuredList;
+const selectedCake = cakeStore.selectedCake;
 
 const selectedSize = ref("Petit");
 const selectedFarcit = ref("Trufa");
 const selectedCoc = ref("Vainilla");
 const selectedTheme = ref("");
+
+console.log(selectedCake.value);
+
+const nextCake = () => {
+  const currentIndex = (featuredList.value.indexOf(selectedCake.value) + 1) % featuredList.value.length;
+  selectedCake.value = featuredList.value[currentIndex];
+};
+
+const previousCake = () => {
+  console.log('before value:', selectedCake.value)
+  const currentIndex = (featuredList.value.indexOf(selectedCake.value) - 1 + featuredList.value.length) % featuredList.value.length;
+  selectedCake.value = featuredList.value[currentIndex];
+  console.log('after value:', selectedCake.value)
+};
 
 let cocOptions;
 cocOptions = ref(["Vainilla", "Xocolata"]);
@@ -211,4 +238,5 @@ const generateWhatsAppLink = () => {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+</style>

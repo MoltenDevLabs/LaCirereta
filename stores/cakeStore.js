@@ -1,5 +1,3 @@
-import type { Cake } from "~/domain/cake";
-
 export const useCakeStore = defineStore("cakeStore", () => {
   const featuredList = ref([
     {
@@ -52,16 +50,15 @@ export const useCakeStore = defineStore("cakeStore", () => {
     },
   ]);
 
+  // Pick a random index from featuredList
+  const getRandomIndex = () => Math.floor(Math.random() * featuredList.value.length);
+
+  // Initialize selectedCake with null
+  const selectedCake = ref(featuredList.value.find(cake => cake.id === 1));
+
+
   return {
     featuredList,
+    selectedCake,
   };
 });
-
-
-
-export const addCakeToStore = (cake: Cake) => {
-  console.log(cake)
-}
-
-export const deleteCakeFromStore = (id: number) => {}
-
