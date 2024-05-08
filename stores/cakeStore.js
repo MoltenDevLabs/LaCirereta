@@ -1,5 +1,5 @@
 export const useCakeStore = defineStore("cakeStore", () => {
-  const featuredList = ref([
+  const cakeList = ref([
     {
       id: 1,
       title: "unicorn",
@@ -50,15 +50,11 @@ export const useCakeStore = defineStore("cakeStore", () => {
     },
   ]);
 
-  // Pick a random index from featuredList
-  const getRandomIndex = () => Math.floor(Math.random() * featuredList.value.length);
-
-  // Initialize selectedCake with null
-  const selectedCake = ref(featuredList.value.find(cake => cake.id === 1));
-
+  // Initialize selectedCake with a random cake from cakeList
+  const selectedCake = cakeList.value[Math.floor(Math.random() * cakeList.value.length)];
 
   return {
-    featuredList,
+    cakeList,
     selectedCake,
   };
 });

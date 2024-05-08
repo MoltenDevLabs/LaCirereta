@@ -109,13 +109,14 @@
               </button>
             </div>
           </div>
-          <div class="flex gap-4 overflow-hidden">
-            <productCard
-              v-for="cake in featuredList"
-              :key="cake.id"
-              :cake="cake"
-            />
-          </div>
+            <div class="flex gap-4 overflow-auto">
+              <productCard
+                v-for="cake in cakeList"
+                :key="cake.id"
+                :cake="cake"
+                class="flex-none max-w-[200px]"
+              />
+            </div>
         </div>
         <div class="flex flex-col justify-center w-2/5">
           <form action="">
@@ -193,8 +194,8 @@
 <script setup>
 import { useCakeStore } from "@/stores/cakeStore";
 const cakeStore = useCakeStore();
-const featuredList = cakeStore.featuredList;
-const selectedCake = cakeStore.selectedCake;
+const cakeList = cakeStore.cakeList;
+const selectedCake = ref(cakeStore.selectedCake);
 
 const selectedSize = ref("Petit");
 const selectedFarcit = ref("Trufa");
@@ -202,17 +203,19 @@ const selectedCoc = ref("Vainilla");
 const selectedTheme = ref("");
 
 console.log(selectedCake.value);
-
-const nextCake = () => {
-  const currentIndex = (featuredList.value.indexOf(selectedCake.value) + 1) % featuredList.value.length;
-  selectedCake.value = featuredList.value[currentIndex];
-};
+console.log(selectedCake.value.id);
+console.log(selectedCake.value.img);
 
 const previousCake = () => {
-  console.log('before value:', selectedCake.value)
-  const currentIndex = (featuredList.value.indexOf(selectedCake.value) - 1 + featuredList.value.length) % featuredList.value.length;
-  selectedCake.value = featuredList.value[currentIndex];
-  console.log('after value:', selectedCake.value)
+  const currentIndex = cakeList.findIndex(cake => cake.id === selectedCake.value.id);
+  const previousIndex = (currentIndex - 1 + cakeList.length) % cakeList.length;
+  selectedCake.value = cakeList[previousIndex];
+};
+
+const nextCake = () => {
+  const currentIndex = cakeList.findIndex(cake => cake.id === selectedCake.value.id);
+  const nextIndex = (currentIndex + 1) % cakeList.length;
+  selectedCake.value = cakeList[nextIndex];
 };
 
 let cocOptions;
