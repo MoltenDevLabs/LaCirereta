@@ -55,10 +55,9 @@ export default defineNuxtConfig({
     fallback: "dark",
   },
   tailwindcss: {
-    cssPath: "@/assets/css/tailwind.css",
+    cssPath: ["@/assets/css/tailwind.css", {injectPosition: 0}],
     configPath: "tailwind.config.js",
     exposeConfig: false,
-    injectPosition: 0,
     viewer: true,
   },
   device: {
